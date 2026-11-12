@@ -182,10 +182,12 @@ Interested in web vulnerabilities, secure authentication, application architectu
 ---
 
 
+
 ## `07 // GITHUB INTELLIGENCE`
 
 <div align="center">
-<! --
+
+<!--
 <img src="./profile/stats.svg"
      width="49%"
      alt="Ayesha's GitHub Statistics"/>
@@ -193,9 +195,8 @@ Interested in web vulnerabilities, secure authentication, application architectu
 <img src="./profile/top-langs.svg"
      width="41%"
      alt="Most Used Languages"/>
-
-<br/><br/>
 -->
+
 <img src="https://streak-stats.demolab.com?user=Ayesha-kazi27&theme=dark&hide_border=true&background=0d0d0d&ring=ff3030&fire=ff3030&currStreakLabel=ff3030"
      width="75%"
      alt="GitHub Contribution Streak"/>
