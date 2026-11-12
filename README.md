@@ -181,15 +181,24 @@ Interested in web vulnerabilities, secure authentication, application architectu
 
 ---
 
+
 ## `07 // GITHUB INTELLIGENCE`
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Ayesha-kazi27&show_icons=true&hide_border=true&bg_color=0d0d0d&title_color=ff3030&icon_color=ff3030&text_color=e0e0e0&rank_icon=github" height="165"/>
+<img src="./profile/stats.svg"
+     width="49%"
+     alt="Ayesha's GitHub Statistics"/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ayesha-kazi27&layout=compact&hide_border=true&bg_color=0d0d0d&title_color=ff3030&text_color=e0e0e0" height="165"/>
+<img src="./profile/top-langs.svg"
+     width="41%"
+     alt="Most Used Languages"/>
 
-<img src="https://streak-stats.demolab.com?user=Ayesha-kazi27&theme=dark&hide_border=true&background=0d0d0d&ring=ff3030&fire=ff3030&currStreakLabel=ff3030" width="75%"/>
+<br/><br/>
+
+<img src="https://streak-stats.demolab.com?user=Ayesha-kazi27&theme=dark&hide_border=true&background=0d0d0d&ring=ff3030&fire=ff3030&currStreakLabel=ff3030"
+     width="75%"
+     alt="GitHub Contribution Streak"/>
 
 </div>
 
