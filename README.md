@@ -195,7 +195,7 @@ Interested in web vulnerabilities, secure authentication, application architectu
      alt="Most Used Languages"/>
 
 <br/><br/>
---!>
+-->
 <img src="https://streak-stats.demolab.com?user=Ayesha-kazi27&theme=dark&hide_border=true&background=0d0d0d&ring=ff3030&fire=ff3030&currStreakLabel=ff3030"
      width="75%"
      alt="GitHub Contribution Streak"/>
