@@ -1,0 +1,46 @@
+
+name: Update GitHub Account Age
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-age:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Calculate account age
+        env:
+          GITHUB_USERNAME: Ayesha-kazi27
+        run: |
+          CREATED_AT=$(curl -s "https://api.github.com/users/$GITHUB_USERNAME" | jq -r '.created_at')
+          CREATED_DATE=$(date -d "$CREATED_AT" +%s)
+          TODAY=$(date +%s)
+
+          DAYS=$(( (TODAY - CREATED_DATE) / 86400 ))
+          YEARS=$(( DAYS / 365 ))
+          REMAINING_DAYS=$(( DAYS % 365 ))
+
+          echo "AGE=${YEARS}y ${REMAINING_DAYS}d" >> $GITHUB_ENV
+
+      - name: Generate account age badge
+        run: |
+          mkdir -p assets
+          curl -s -o assets/github-account-age.svg \
+          "https://img.shields.io/badge/GitHub%20Account%20Age-${AGE// /%20}-8B0000?style=for-the-badge&logo=github&logoColor=white"
+
+      - name: Commit updated badge
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/github-account-age.svg
+          git diff --cached --quiet || git commit -m "Update GitHub account age"
+          git push
