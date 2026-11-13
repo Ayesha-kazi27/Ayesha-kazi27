@@ -59,6 +59,10 @@ class Ayesha:
 print(Ayesha().mission())
 ```
 
+<p align="center">
+  <img src="./assets/github-account-age.svg" alt="GitHub Account Age"/>
+</p>
+
 ---
 
 ## `02 // ABOUT ME.exe`
